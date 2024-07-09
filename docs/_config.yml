@@ -1,0 +1,12 @@
+title: Nine One Copilot
+email: 24796839@qq.com
+description: >- # this means to ignore newlines until "baseurl:"
+  The Ultimate Desktop Application for Language Model Integration Across Multiple Platforms.
+baseurl: "NineOneCopilot" # the subpath of your site, e.g. /blog
+url: "http://kuyacai.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: abc
+github_username:  kuyacai
+
+# Build settings
+markdown: kramdown
+theme: minima
