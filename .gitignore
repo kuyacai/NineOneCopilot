@@ -1,5 +1,7 @@
 # Mac os file
 .DS_Store
+#temporary files
+temp.txt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
