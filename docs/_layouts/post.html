@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="NineOneCopilot">
+	<meta name="description" content="The Ultimate Desktop Application for Language Model Integration Across Multiple Platforms.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="assets/style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="assets/css/font-icons.css">
+	<link rel="stylesheet" href="assets/one-page/css/et-line.css">
+
+	<!-- One Page Module Specific Stylesheet -->
+	<link rel="stylesheet" href="assets/one-page/onepage.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>{{ page.title }}</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header transparent-header border-full-header header-size-custom" data-sticky-shrink="false">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="index.html">
+								<img class="logo-default" srcset="images/nine_one_copilot_logo.png, images/nine_one_copilot_logo@2x.png 2x" src="images/nine_one_copilot_logo@2x.png" alt="Nine One Copilot Logo">
+								<img class="logo-dark" srcset="images/nine_one_copilot_logo_dark.png, images/nine_one_copilot_logo_dark@2x.png 2x" src="images/nine_one_copilot_logo_dark@2x.png" alt="Nine One Copilot Logo">
+							</a>
+						</div><!-- #logo end -->
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+
+							<ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+								<li class="menu-item">
+									<a href="#" class="menu-link" data-href="#wrapper"><div>Home</div></a>
+								</li>
+								<li class="menu-item">
+									<a href="provider-settings.html" class="menu-link"><div>Models</div></a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link" data-href="#section-doc"><div>Doc</div></a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link" data-href="#section-blog"><div>Blog</div></a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link" data-href="#section-discord"><div>Discord</div></a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link" data-href="#section-github"><div>Github</div></a>
+								</li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- Page Title
+		============================================= -->
+		<section class="page-title bg-transparent">
+			<div class="container">
+				<div class="page-title-row">
+
+					<div class="page-title-content">
+						<h1>Blog</h1>
+						<span>{{ page.title }}</span>
+					</div>
+
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Blog</li>
+						</ol>
+					</nav>
+
+				</div>
+			</div>
+		</section><!-- .page-title end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container">
+
+					<!-- Posts
+					============================================= -->
+					<div id="posts" class="row gutter-30">
+						{{ content }}
+					</div><!-- #posts end -->
+
+					<!-- Pager
+					============================================= -->
+					<div class="d-flex justify-content-between mt-5">
+						<a href="#" class="btn btn-outline-secondary">&larr; Older</a>
+						<a href="#" class="btn btn-outline-dark">Newer &rarr;</a>
+					</div>
+					<!-- .pager end -->
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark border-0">
+
+			<div id="copyrights">
+				<div class="container text-center">
+					Copyrights NineOneCopilot 2024 | All Rights Reserved
+				</div>
+			</div>
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="assets/js/plugins.min.js"></script>
+	<script src="assets/js/functions.bundle.js"></script>
+
+</body>
+</html>
