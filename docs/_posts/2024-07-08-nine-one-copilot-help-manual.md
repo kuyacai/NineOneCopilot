@@ -55,7 +55,9 @@ With these basic steps, you're ready to embark on your AI journey using Nine One
 
 ## LLM Provider Settings
 ### OpenAI Setting
+
 ### Ollama Setting
+
 ### Moonshot Setting
 
 
