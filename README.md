@@ -45,3 +45,11 @@ Once you've connected to your chosen AI models, you can browse the list of avail
 Now comes the fun part! To start interacting with AI models, you'll need to create a new conversation. This is where you'll type your prompts, questions, or instructions for the AI to process and respond to. Nine One Copilot will act as your intermediary, sending your requests to the selected AI model and displaying the responses back to you.
 
 With these basic steps, you're ready to embark on your AI journey using Nine One Copilot. Remember, this is just the beginning – there's a whole world of AI possibilities waiting to be explored!
+
+## Core Features
+
+### Support for Multiple Large Language Models (LLMs)
+Describe how your app integrates with various LLM providers, highlighting any unique features or capabilities that enhance this integration.
+
+### Advanced Prompt Engineering Tools
+Explain the tools and features your app offers to help users craft effective prompts, including any templates, analytics, or optimization techniques.
