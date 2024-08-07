@@ -39,13 +39,15 @@ Welcome to Nine One Copilot, your powerful AI assistant for Windows and Mac comp
 
 When you first launch Nine One Copilot, it will ask you to set up a user data directory. This is where all your personal data and settings will be stored. Choose a location that you can easily access and remember, as you'll need it later.
 
-![Set user data folder](/NineOneCopilot/iamges/set_user_data_folder.png)
+<img src="/NineOneCopilot/images/set_user_data_folder.png" alt="Set user data folder" width="600">
+
 1. Click the "Select Directory" button to choose the directory where you want to save your personal data.
 2. After completing the first step, you will see the selected directory displayed in the box  marked with a red frame labeled as 2 in the image above.
 3. Click the "Start App" button to begin using Nine One Copilot.
 
 After completing the above setup, you will see the following interface:
-![Main Interface](/NineOneCopilot/images/main_ui.png)
+
+<img src="/NineOneCopilot/images/main_ui.png" alt="Main Interface" width="600">
 
 ### Home
 
@@ -54,12 +56,18 @@ In this interface, the left side features a navigation bar, while the right side
 Here, I recommend using vlabell's **All AI in One** solution. By registering as a vlabell user, you can access services from multiple model providers, including OpenAI. vlabell integrates these providers into a single platform for your convenience. Essentially, you are still using models provided by OpenAI, similar to using ChatGPT directly. The key difference is that with vlabell, you only need to register once to access models from multiple providers, eliminating the need to register with each one individually.
 
 Once you have registered with a model provider and obtained an API key, click the "Try it" button corresponding to that provider to proceed to the next interface. Here, I will introduce each provider one by one.
-![Open AI Interface](/NineOneCopilot/images/openai_chat_interface.png)
+
+
+<img src="/NineOneCopilot/images/openai_chat_interface.png" alt="Open AI Interface" width="600">
 
 #### Ollama
-![Ollama Interface](/NineOneCopilot/images/ollama_chat_interface.png)
+
+<img src="/NineOneCopilot/images/ollama_chat_interface.png" alt="Ollama Interface" width="600">
+
 Click the settings button indicated by arrow 1, as shown in the interface below:
-![Ollama Setting Window](/NineOneCopilot/images/ollama_settings_window.png)
+
+<img src="/NineOneCopilot/images/ollama_settings_window.png" alt="Ollama Setting Window" width="600">
+
 For Ollama, if you have installed it locally, you generally do not need to set the Base URL; the default setting should suffice. However, you need to click the "Get Models" button to retrieve the models you have installed.
 If you encounter errors while fetching models, please follow these steps to troubleshoot:
 1. Ensure that Ollama is running.
@@ -69,7 +77,8 @@ If you encounter errors while fetching models, please follow these steps to trou
 If you still cannot resolve the issue, please open an issue or join our Discord (for users outside mainland China) or QQ group (for users in mainland China) for assistance.
 
 #### OpenAI
-![Open AI Interface](/NineOneCopilot/images/openai_chat_interface.png)
+
+<img src="/NineOneCopilot/images/openai_chat_interface.png" alt="Open AI Interface" width="600">
 
 Click [here](https://openai.com/) to register as an OpenAI user and obtain your API Key.
 
@@ -81,7 +90,7 @@ Visit [this link](https://platform.openai.com/docs/quickstart/step-2-set-up-your
 **Nine One Copilot Method:**
 If you find setting up the API Key via environment variables cumbersome, you can use the method provided by Nine One Copilot. Note: We do not store your API Key on our servers; it will be saved locally on your computer. For security reasons, we recommend regularly changing your API Key. Click the settings button in the image above to open the following window.
 
-![Open AI Interface](/NineOneCopilot/images/openai_chat_interface.png)
+<img src="/NineOneCopilot/images/openai_chat_interface.png" alt="Open AI Interface" width="600">
 
 In most cases, you do not need to fill in the Base URL. Simply enter the API Key and Organization details you obtained from OpenAI into the corresponding input fields. If you are in a region where OpenAI services are not accessible, you can try setting up a Proxy. However, as of August 5, 2024, this solution may not always work.
 
@@ -89,7 +98,9 @@ If you are unable to use the service, please contact us, and we will provide you
 
 ### Chats
 When you click the "Chats" button in the left navigation bar, the following interface will appear.
-![Chat Interface](/NineOneCopilot/images/chat_main_interface.png)
+
+<img src="/NineOneCopilot/images/chat_main_interface.png" alt="Chat Interface" width="600">
+
 Here, you will find all your conversation records with various models. By clicking on any conversation, you can view the conversation history and continue the discussion.
 Note: This does not include conversations with any Agents.
 
@@ -99,41 +110,68 @@ Some useful tips:
 - During a conversation, if you are not satisfied with a response from the model, you can click the "Unlike" button. This way, in continuous conversations, we will not process that response.
 - If your conversation does not require the model to understand the context, you can disable the continuous conversation feature to save tokens.
 
+When you create a new conversation or open an existing one, you will see the following interface:
+
+<img src="/NineOneCopilot/images/chat_interface_2.png" alt="Chat Interface" width="600">
+
+Alternatively:
+
+<img src="/NineOneCopilot/images/ollama_chat_interface_2.png" alt="Ollama Chat Interface" width="600">
+
+There is no fundamental difference between the two; they are just different entry points with slightly different displays.
+
+As shown in the images above, here is a brief description of each feature, corresponding to the numbered arrows in the images:
+
+1. **Copy**: Click this icon to copy the entire conversation. If you only want to copy a specific part of the conversation, select the desired text, right-click, and choose the copy option from the context menu.
+2. **Retry**: If you are not satisfied with the generated response, click this button to have the LLM regenerate the response.
+3. **Like and Unlike Icons**: If you are not satisfied with the generated response, click the "Unlike" button. This will prevent the response from being included in continuous conversations, ensuring that incorrect content is not used as input for the LLM. Currently, the "Like" icon is not functional.
+4. **Model Dropdown**: Use this dropdown to switch between models provided by the same provider. If you want to use a model from a different provider, you need to create a new conversation and select the desired provider during the setup.
+5. **Clear Continuous Conversation Button**: If you are not satisfied with the current conversation, you have two options: create a new conversation or click this clear button. Clicking clear will prevent all previous conversation records from being used as prompts in the continuous conversation, essentially starting fresh.
+6. **Enable/Disable Continuous Conversation**: Toggle this to enable or disable the continuous conversation feature.
+7. **Enable/Disable Streaming Output**: Toggle this to enable or disable the streaming output feature.
+8. **Edit Conversation Title**: Click here to edit the title of the conversation.
+9. **Delete Conversation**: Click here to delete the conversation.
+
+It is important to note that these conversation records are not saved on our servers; they are stored locally on your computer.
+
 ### Agents
 
+When you click the "Agents" button in the left navigation bar, the following interface will appear:
 
-### Connecting to AI Models
+<img src="/NineOneCopilot/images/agents_main_interface.png" alt="Agents Interface" width="600">
 
-Nine One Copilot lets you work with various AI models from different providers, such as OpenAI, Moonshot, and Qwen. To connect to these models, you'll need to provide their respective API keys. Each provider has its own way of obtaining and setting up API keys, so we'll cover the specific steps for each provider in later sections of this guide.
+In this interface, multiple agents are displayed in a card format. Choose the agent that suits your needs based on the functionality you require. Each agent has a slightly different usage method, and we will provide detailed instructions for each one.
 
-### Exploring Available Models
+Generally, when using an agent, you will need to configure some settings, such as selecting which language model to use. In most cases, you can complete the necessary settings by clicking the corresponding settings button.
 
-Once you've connected to your chosen AI models, you can browse the list of available models within Nine One Copilot. This will give you an overview of the different AI capabilities you can access and utilize.
+#### I18N Assistant
 
-### Creating Conversations and Interacting with AI
+In software development, we often need to implement multilingual support. Once we have prepared the text files to be translated, we either hire professional translators or use services like Google Translate. The former can be time-consuming and expensive, while the latter often results in inaccurate translations. I18N Assistant offers an easy solution to these challenges. Here are the advantages of using I18N Assistant:
 
-Now comes the fun part! To start interacting with AI models, you'll need to create a new conversation. This is where you'll type your prompts, questions, or instructions for the AI to process and respond to. Nine One Copilot will act as your intermediary, sending your requests to the selected AI model and displaying the responses back to you.
+1. By integrating with large language models, it provides accurate translations tailored to the context and localizes the text for the target language.
+2. It can directly generate translated files according to the specific software development framework, eliminating the need for additional operations.
 
-With these basic steps, you're ready to embark on your AI journey using Nine One Copilot. Remember, this is just the beginning – there's a whole world of AI possibilities waiting to be explored!
+The software interface is shown below:
 
-## LLM Provider Settings
-### OpenAI Setting
+<img src="/NineOneCopilot/images/i18n_assistant.png" alt="i18n assistant" width="600">
 
-### Ollama Setting
+The functions indicated by the numbered arrows are as follows:
+1. Select the language model you wish to use.
+2. Choose the framework used by the file you want to internationalize. Currently, the PySide series is supported, with more frameworks to be added soon.
+3. Select the source file.
+4. Choose the target language.
+5. Set the delay time. This is important because most large language model platforms limit access frequency. Too frequent API requests will be rejected, resulting in errors. The default value is 1 second. Please adjust this according to the requirements of your chosen language model provider.
 
-### Moonshot Setting
+Once all settings are configured, click the "Start" button to begin.
 
+#### 中文润色专家
 
+This Agent provides users with in-depth text analysis and polishing services to enhance the impact and aesthetics of their writing.
 
-## Build your personal RAG
+<img src="/NineOneCopilot/images/Chinese_language_polishing_expert.png" alt="Chinese Language Polishing Expert" width="600">
 
+When using this Agent for the first time, you need to configure it by selecting the large language model you wish to use. Click the settings button indicated by arrow 1, which will open a window where you can choose the language model. Note that you should have already set the API Key for the provider correctly (you only need to set it once for each provider in the application). Then, click the "New Conversation" button indicated by arrow 2 to start a new session.
 
-## View AI Agents
+<img src="/NineOneCopilot/images/Chinese_language_polishing_expert_2.png" alt="Chinese Language Polishing Expert" width="600">
 
-## Troubleshooting
-
-
-## Updates and Maintenance
-- Checking for Updates
-
-
+Note: For very long articles, we recommend polishing them in sections. This is because the model you choose may not support such long contexts, which could lead to errors.
